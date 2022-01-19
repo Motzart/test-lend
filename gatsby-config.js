@@ -4,8 +4,8 @@ module.exports = {
     description: 'Pembrock landing page v.1',
   },
   plugins: [
-    'Pembrock-plugin-image',
-    'Pembrock-plugin-react-helmet',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
