@@ -1,0 +1,13 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+  min-height: 583px;
+  background-color: $black;
+
+  .navigation_block {
+    .logo {
+    }
+  }
+  .launch_block {
+  }
+}
