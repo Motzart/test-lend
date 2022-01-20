@@ -5,20 +5,31 @@ import logo from '../../images/header/header_logo.svg'
 import * as styles from './header.module.scss'
 
 export const Header = () => {
-  return (
+  const handleClick = e => {
+    console.log('Hello');
+    // var foo = document.getElementById("burger");
+
+    // for (var i = 0; i < foo.length; i++) {
+    //   foo[i].classList.remove("active");
+    // }
+
+    // e.currentTarget.classList.add("active");
+  }
+
+    return (
     <header className={styles.header}>
-      <div className={styles.navigation_block}>
-        <Link to="/">
+      <div className={styles.container}>
+        <div className={styles.header_body}>
+        <Link to="/" className={styles.header_logo}>
           <img src={logo} alt='logo'/>
-          {/* <span>PembRock</span> */}
         </Link>
-        <button className={styles.button_connect}>
+        {/* <button className={styles.button_connect}>
           <p className={styles.button_text}>Launch app</p>
-          </button>
-        <div className={styles.header_burger}>
+          </button> */}
+        <div className={styles.header_burger} id='burger' onClick={handleClick}>
           <span></span>
-          </div>
-        <nav className={styles.navigation}>
+        </div>
+        <nav className={styles.header_menu}>
           <ul className={styles.header_list}> 
             <li>
               <Link to="/" className={styles.header_link}>Docs</Link>
@@ -37,8 +48,8 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
+        </div>
       </div>
-      <div className={styles.launch_block}></div>
     </header>
-  )
+  );
 }
