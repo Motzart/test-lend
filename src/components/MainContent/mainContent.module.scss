@@ -1,0 +1,23 @@
+@import '../../styles/variables.module.scss';
+
+.container {
+  min-height: calc(100vh - 895px);
+  background-color: $color_141313;
+
+  .near_pembrock_section {
+    min-height: 373px;
+    background-color: $black;
+  }
+  .information_section {
+    display: flex;
+  }
+  .roadmap_section {
+    display: flex;
+  }
+  .team_section {
+    display: flex;
+  }
+  .community_section {
+    display: flex;
+  }
+}
