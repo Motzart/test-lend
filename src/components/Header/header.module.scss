@@ -5,9 +5,13 @@
   background-color: $black;
 
   .navigation_block {
-    .logo {
+    display: flex;
+
+    .navigation {
+      display: flex;
     }
   }
   .launch_block {
+    display: flex;
   }
 }

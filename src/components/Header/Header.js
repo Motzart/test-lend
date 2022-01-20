@@ -8,9 +8,9 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.navigation_block}>
         <Link to="/">
-          <div className={styles.logo}>PembRock</div>
+          <span>PembRock</span>
         </Link>
-        <nav>
+        <nav className={styles.navigation}>
           <ul>
             <li>
               <Link to="/">Home</Link>
