@@ -1,0 +1,17 @@
+@import '../../styles/variables.module.scss';
+
+.header {
+  min-height: 583px;
+  background-color: $black;
+
+  .navigation_block {
+    display: flex;
+
+    .navigation {
+      display: flex;
+    }
+  }
+  .launch_block {
+    display: flex;
+  }
+}
