@@ -30,7 +30,6 @@
 
   .header_body{
     position: relative;
-    // z-index: 2;
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -51,6 +50,7 @@
   .button_connect{
     background-color: $brang_yelow;
     color: $color_FFFFFF;
+    // order: 2;
 
     width: 137px;
     height: 40px;
@@ -76,6 +76,10 @@
   background-color: $color_5A2D1A;
 } 
 }
+
+// .header_menu{
+//   order: 1;
+// }
 
   .header_burger {
     display: none;
@@ -232,5 +236,13 @@
   .header_link_menu{
     opacity: 0;
   }
+
+  .button_connect{
+      order: 2;
+    }
+
+    .header_menu{
+      order: 1;
+    }
 }
 }
