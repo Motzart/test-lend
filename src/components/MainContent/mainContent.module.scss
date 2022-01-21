@@ -2,7 +2,10 @@
 
 .container {
   min-height: calc(100vh - 895px);
-  background-color: $color_141313;
+  max-width: 80%;
+  width: max-content;
+  margin: 0 auto;
+  background: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
 
   .near_pembrock_section {
     min-height: 373px;
@@ -19,5 +22,9 @@
   }
   .community_section {
     display: flex;
+  }
+
+  h2 {
+    color: rgba(234, 236, 239, 0.87);
   }
 }
