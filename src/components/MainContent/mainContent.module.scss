@@ -2,15 +2,9 @@
 
 .container {
   min-height: calc(100vh - 895px);
-  max-width: 80%;
-  width: max-content;
-  margin: 0 auto;
+  padding: 0 10%;
   background: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
 
-  .near_pembrock_section {
-    min-height: 373px;
-    background-color: $black;
-  }
   .information_section {
     display: flex;
   }
@@ -25,6 +19,6 @@
   }
 
   h2 {
-    color: rgba(234, 236, 239, 0.87);
+    color: rgba($color_EAECEF, 0.87);
   }
 }
