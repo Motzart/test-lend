@@ -9,13 +9,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pages`,
-        path: `${__dirname}/src/images/`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/favicon.png',
