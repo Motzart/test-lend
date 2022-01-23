@@ -64,7 +64,7 @@
 
       //drawing roadmap line
       &:nth-child(4) {
-        .pickCircle {
+        .extremumCircle {
           background-color: $brand_yellow;
         }
         img {
@@ -81,6 +81,13 @@
       }
       // end
 
+      &:nth-child(5),
+      &:nth-child(7) {
+        .extremumCircle {
+          top: unset;
+          bottom: -10px;
+        }
+      }
       &:nth-child(9) {
         grid-column: 2 / 4;
       }
@@ -122,15 +129,9 @@
   }
 }
 
-.pickCircle {
+.extremumCircle {
   @extend %tpl_circle;
   top: -10px;
-  z-index: 2;
-}
-
-.valleyCircle {
-  @extend %tpl_circle;
-  bottom: -10px;
 }
 
 .disc {

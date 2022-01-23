@@ -10,17 +10,12 @@ import gradientLine from '../../../images/MainContent/roadmap_gradient_line.svg'
 
 export default function Roadmap() {
   // jsxElements
-  const imgNoActiveLine = <img src={noActiveLine} alt="Roadmmap line" />
+  const imgNoActiveLine = <img src={noActiveLine} alt="Roadmmap active line" />
   const imgNoActiveLineTransform = (
     <img src={noActiveLine} className={styles.transform} alt="Roadmmap line" />
   )
-  const pickCircle = (
-    <div className={styles.pickCircle}>
-      <div className={styles.innerCircle} />
-    </div>
-  )
-  const valleyCircle = (
-    <div className={styles.valleyCircle}>
+  const extremumCircle = (
+    <div className={styles.extremumCircle}>
       <div className={styles.innerCircle} />
     </div>
   )
@@ -61,25 +56,25 @@ export default function Roadmap() {
           )
         })}
         <div className={styles.item}>
-          {pickCircle}
+          {extremumCircle}
           <img src={activeLine} alt="Roadmmap line" />
         </div>
         <div className={styles.item}>
-          {valleyCircle}
+          {extremumCircle}
           {imgNoActiveLine}
         </div>
         <div className={styles.item}>
-          {pickCircle}
+          {extremumCircle}
           {imgNoActiveLineTransform}
         </div>
         <div className={styles.item}>
-          {valleyCircle}
+          {extremumCircle}
           {imgNoActiveLine}
         </div>
         <div className={styles.item}>
-          {pickCircle}
+          {extremumCircle}
           {imgNoActiveLineTransform}
-          <img src={gradientLine} alt="Roadmmap line" />
+          <img src={gradientLine} alt="Roadmmap gradient line" />
         </div>
         {RoadMapConfig.evenMilestone.map((el, index) => {
           return (
