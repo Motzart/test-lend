@@ -6,10 +6,6 @@
   padding: 0px 10px;
 }
 
-// .active {
-  
-// }
-
 .header {
   position: fixed;
   width: 100%;
@@ -50,7 +46,6 @@
   .button_connect{
     background-color: $brang_yelow;
     color: $color_FFFFFF;
-    // order: 2;
 
     width: 137px;
     height: 40px;
@@ -60,7 +55,6 @@
 
     position: relative;
     z-index: 3;
-  
 
   .button_text{
     font-family: Roboto;
@@ -77,13 +71,8 @@
 } 
 }
 
-// .header_menu{
-//   order: 1;
-// }
-
   .header_burger {
     display: none;
-    
   } 
   
   .header_list{
@@ -98,7 +87,6 @@
     text-decoration: none;
     margin-left: 20px;
     
-
     font-family: Proxima Nova;
     font-size: 24px;
     line-height: 32px;
@@ -116,7 +104,6 @@
     font-family: Proxima Nova;
     font-size: 16px;
     line-height: 24px;
-
   }
 
   .header_link {
