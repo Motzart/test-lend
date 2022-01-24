@@ -10,23 +10,20 @@ export const Header = () => {
   const menuEl = useRef(null);
   const buttonEl = useRef(null);
 
+  const addClasses = (element, nameClass) => {
+    element.contains(nameClass) ? 
+    element.remove(nameClass) :
+    element.add(nameClass);
+  }
+
   const handleClick = e => {
      const classEl = burgerEl.current.classList ;
      const classMenuEl = menuEl.current.classList;
      const classButtonEl = buttonEl.current.classList;
 
-      classEl.contains(`${styles.active}`) ? 
-      classEl.remove(`${styles.active}`) :
-      classEl.add(`${styles.active}`);
-
-      classMenuEl.contains(`${styles.active}`) ? 
-      classMenuEl.remove(`${styles.active}`) :
-      classMenuEl.add(`${styles.active}`);
-
-      classButtonEl.contains(`${styles.add_btn}`) ? 
-      classButtonEl.remove(`${styles.add_btn}`) :
-      classButtonEl.add(`${styles.add_btn}`);
-
+     addClasses(classEl, `${styles.active}`);
+     addClasses(classMenuEl, `${styles.active}`);
+     addClasses(classButtonEl, `${styles.add_btn}`);
   }
 
     return (

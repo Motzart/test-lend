@@ -18,4 +18,5 @@ public
 
 # 
 *.lock
+.DS_Store 
 
