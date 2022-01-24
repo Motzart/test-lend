@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import { Link } from 'gatsby'
 import logo from '../../images/header/header_logo.svg'
 import arrows from '../../images/header/arrows.svg'
@@ -10,10 +10,22 @@ export const Header = () => {
   const menuEl = useRef(null);
   const buttonEl = useRef(null);
 
+  const[menu, setMenu] = useState(false);
+
   const addClasses = (element, nameClass) => {
     element.contains(nameClass) ? 
     element.remove(nameClass) :
     element.add(nameClass);
+  }
+
+  const noScroll = () => {
+    if(!menu){
+       document.body.style.overflow = "hidden";
+       setMenu(true);
+     } else{
+      document.body.style.overflow = "visible";
+      setMenu(false);
+     }
   }
 
   const handleClick = e => {
@@ -24,6 +36,8 @@ export const Header = () => {
      addClasses(classEl, `${styles.active}`);
      addClasses(classMenuEl, `${styles.active}`);
      addClasses(classButtonEl, `${styles.add_btn}`);
+
+     noScroll();
   }
 
     return (
