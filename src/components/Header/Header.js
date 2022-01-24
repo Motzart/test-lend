@@ -1,5 +1,6 @@
 import React, {useRef, useState} from 'react'
 import { Link } from 'gatsby'
+import ButtonLaunch from '../ButtonLaunch/ButtonLaunch'
 import logo from '../../images/header/header_logo.svg'
 import arrows from '../../images/header/arrows.svg'
 // styles
@@ -28,6 +29,10 @@ export const Header = () => {
      }
   }
 
+  const handleClickBtn = e => {
+    console.log('click button Launch app');
+  }
+
   const handleClick = e => {
      const classEl = burgerEl.current.classList ;
      const classMenuEl = menuEl.current.classList;
@@ -47,9 +52,7 @@ export const Header = () => {
         <Link to="/" className={styles.header_logo}>
           <img src={logo} alt='logo'/>
         </Link>
-        <button className={styles.button_connect} ref={buttonEl}>
-          <p className={styles.button_text}>Launch app</p>
-          </button>
+        <ButtonLaunch handleClick={handleClickBtn} />
         <div className={styles.header_burger} ref={menuEl} onClick={handleClick}>
           <span></span>
         </div>
