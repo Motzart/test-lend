@@ -63,12 +63,12 @@
     font-size: 14px;
     line-height: 24px;
   }
+
   &:hover,
   &:focus,
-  &:active
- {
-  background-color: $color_5A2D1A;
-} 
+  &:active{
+     background-color: $color_5A2D1A;
+  } 
 }
 
   .header_burger {
