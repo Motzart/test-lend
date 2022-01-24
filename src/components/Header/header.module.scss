@@ -1,4 +1,5 @@
 @import '../../styles/variables.module.scss';
+@import '../../styles/fonts/ProximaNova/stylesheet.css';
 
 .container{
   max-width: 1180px;
@@ -57,9 +58,9 @@
     z-index: 3;
 
   .button_text{
-    font-family: Roboto;
+    font-family: Proxima Nova Cn Lt;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
   }
@@ -87,7 +88,8 @@
     text-decoration: none;
     margin-left: 20px;
     
-    font-family: Proxima Nova;
+    font-family: Proxima Nova Cn Rg;
+    font-weight: 700;
     font-size: 24px;
     line-height: 32px;
   }
@@ -101,7 +103,8 @@
     width: 62px;
     height: 24px;
 
-    font-family: Proxima Nova;
+    font-family: Proxima Nova Rg;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
   }
@@ -117,6 +120,7 @@
 
   .header_link_text {
     text-decoration: underline;
+    font-family: Proxima Nova;
   }
 
   @media (max-width: 767px){
