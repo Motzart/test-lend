@@ -1,0 +1,78 @@
+@import '../../../styles/variables.module.scss';
+@import '../../../styles/fonts/ProximaNova/stylesheet.css';
+
+.header_list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header_link{
+    list-style: none;
+    color: $color_848A8F;
+    text-decoration: none;
+    margin-left: 24px;
+    width: 62px;
+    height: 24px;
+
+    font-family: Proxima Nova Rg;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .header_link {
+    &:hover,
+    &:focus,
+    &:active
+   {
+    color: $color_FFFFFF;
+  } 
+  }
+
+  .icon{
+    margin-left: 7px;
+  }
+
+  @media (max-width: 767px){
+    .navigator{
+      display: none;
+    }
+  }
+
+// @media (max-width: 767px){
+// .header_menu {
+//     position: fixed;
+//     top: -100%;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     transition: all 0.3s ease 0s;
+//     background-color: $black;
+//     padding: 70px 10px 0px 10px;
+
+//     &.active {
+//     top: 0;
+//   }
+//   }
+
+//   .header_list{
+//     display: block;
+//   }
+
+//   .arrows{
+//     float: right;
+//     margin: 0px 50px 0px 0px;
+//   }
+// }
+
+//   @media (min-width: 768px){
+//     .arrows,
+//     .header_link_menu{
+//       opacity: 0;
+//     }
+
+//       .header_menu{
+//         order: 1;
+//       }
+//   }

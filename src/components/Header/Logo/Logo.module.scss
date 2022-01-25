@@ -1,0 +1,17 @@
+.header_logo{
+    flex: 0 0 170px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .header_logo img{
+    max-width: 100%;
+    display: block;
+  }
+
+//   @media (max-width: 767px){
+//     .header_logo{
+//       flex: 0 0 135px;
+//     }
+// }
