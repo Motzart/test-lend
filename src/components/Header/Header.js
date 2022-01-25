@@ -11,9 +11,10 @@ import * as styles from './header.module.scss'
 
 export const Header = () => {
   const [enableButton, setEnableButton] = useState(true);
+  const [enableMenu, setEnableBurgerMenu] = useState(false);
   const burgerEl = useRef(null);
-  const menuEl = useRef(null);
-  const buttonEl = useRef(null);
+  // const menuEl = useRef(null);
+  // const buttonEl = useRef(null);
 
   const[menu, setMenu] = useState(false);
 
@@ -43,10 +44,10 @@ export const Header = () => {
     //  const classButtonEl = buttonEl.current.classList;
 
      addClasses(classEl, `${styles.active}`);
-    //  addClasses(classMenuEl, `${styles.active}`);
-    //  addClasses(classButtonEl, `${styles.add_btn}`);
+nu    //  addClasses(classButtonEl, `${styles.add_btn}`);
 
     setEnableButton(!enableButton);
+    setEnableBurgerMenu(!enableMenu);
 
     //  noScroll();
   }
@@ -81,7 +82,7 @@ export const Header = () => {
         <Logo img={logoImg} />
         <HeaderMenu list={list}/>
         {enableButton && <ButtonLaunch handleClick={handleClickBtn}/>}
-        {/* <BurgerMenu img={imgArrows} handleClick={handleClick} /> */}
+        {enableMenu &&  <BurgerMenu img={imgArrows} handleClick={handleClick} />}
         <div  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
           <span></span>
         </div>
