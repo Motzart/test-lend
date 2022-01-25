@@ -44,7 +44,8 @@ export const Header = () => {
     //  const classButtonEl = buttonEl.current.classList;
 
      addClasses(classEl, `${styles.active}`);
-nu    //  addClasses(classButtonEl, `${styles.add_btn}`);
+    //  addClasses(classMenuEl, `${styles.active}`);
+    //  addClasses(classButtonEl, `${styles.add_btn}`);
 
     setEnableButton(!enableButton);
     setEnableBurgerMenu(!enableMenu);
