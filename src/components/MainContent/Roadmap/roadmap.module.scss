@@ -107,8 +107,10 @@
       border-radius: 50%;
       background-color: $color_5A2D1A;
     }
+  }
 
-    @media screen and (max-width: 767px) {
+  @media only screen and (max-width: 819px) {
+    .roadmap {
       grid-template-columns: 24px 280px;
       grid-template-rows: repeat(5, minmax(165px, auto));
       justify-content: center;
@@ -177,6 +179,17 @@
       .disc {
         display: none;
       }
+    }
+  }
+  @media only screen and (max-width: 401px) {
+    padding: 0;
+    .title {
+      text-align: left;
+    }
+    .roadmap {
+      grid-template-columns: 24px auto;
+      justify-content: start;
+      column-gap: 10px;
     }
   }
 }
