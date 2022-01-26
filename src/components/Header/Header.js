@@ -5,7 +5,7 @@ import HeaderMenu from '../Header/HeaderMenu/HeaderMenu'
 import BurgerMenu from '../Header/Burger/BurgerMenu'
 import logoImg from '../../images/header/header_logo.svg'
 import imgArrows from '../../images/header/arrows.svg'
-import docsArrows from '../../images/header/docs_icon.png'
+import docsArrows from '../../images/header/docs_icon.svg'
 // styles
 import * as styles from './header.module.scss'
 
@@ -81,9 +81,9 @@ export const Header = () => {
           <div className={styles.menu_block}>
             {enableButton && <ButtonLaunch handleClick={handleClickBtn}/>}
             {enableMenu &&  <BurgerMenu img={imgArrows} list={list} handleClick={handleClick} />}
-              <div  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
+              <button  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
                 <span></span>
-              </div>
+              </button>
           </div>
         </div>
       </div>

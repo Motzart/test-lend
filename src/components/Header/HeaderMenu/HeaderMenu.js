@@ -8,7 +8,7 @@ const HeaderMenu = ({list}) => {
         <ul className={styles.header_list}> 
         {list.map((link, idx) => {
           return(
-             <li className={styles.li_b} key={idx}>
+             <li key={idx}>
               <Link to="/" className={styles.header_link}>
                 {link.label}
               </Link>
