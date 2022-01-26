@@ -2,15 +2,8 @@
 
 .container {
   min-height: calc(100vh - 895px);
-  background-color: $color_141313;
+  background: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
 
-  .near_pembrock_section {
-    min-height: 373px;
-    background-color: $black;
-    padding-top: 80px;
-    color: $color_848A8F;
-
-  }
   .information_section {
     display: flex;
   }
@@ -22,5 +15,9 @@
   }
   .community_section {
     display: flex;
+  }
+
+  h2 {
+    color: rgba($color_EAECEF, 0.87);
   }
 }
