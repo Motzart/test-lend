@@ -5,7 +5,7 @@ import HeaderMenu from '../Header/HeaderMenu/HeaderMenu'
 import BurgerMenu from '../Header/Burger/BurgerMenu'
 import logoImg from '../../images/header/header_logo.svg'
 import imgArrows from '../../images/header/arrows.svg'
-import docsArrows from '../../images/header/Vector.png'
+import docsArrows from '../../images/header/docs_icon.png'
 // styles
 import * as styles from './header.module.scss'
 
