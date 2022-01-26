@@ -13,9 +13,7 @@ export const Header = () => {
   const [enableButton, setEnableButton] = useState(true);
   const [enableMenu, setEnableBurgerMenu] = useState(false);
   const burgerEl = useRef(null);
-  // const menuEl = useRef(null);
-  // const buttonEl = useRef(null);
-
+ 
   const[menu, setMenu] = useState(false);
 
   const addClasses = (element, nameClass) => {
@@ -39,18 +37,14 @@ export const Header = () => {
   }
 
   const handleClick = e => {
-     const classEl = burgerEl.current.classList ;
-    //  const classMenuEl = menuEl.current.classList;
-    //  const classButtonEl = buttonEl.current.classList;
-
-     addClasses(classEl, `${styles.active}`);
-    //  addClasses(classMenuEl, `${styles.active}`);
-    //  addClasses(classButtonEl, `${styles.add_btn}`);
-
+    const classEl = burgerEl.current.classList ;
+    
+    addClasses(classEl, `${styles.active}`);
+   
     setEnableButton(!enableButton);
     setEnableBurgerMenu(!enableMenu);
 
-    //  noScroll();
+    noScroll();
   }
 
   const list = [
@@ -80,13 +74,17 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.header_body}>
-        <Logo img={logoImg} />
-        <HeaderMenu list={list}/>
-        {enableButton && <ButtonLaunch handleClick={handleClickBtn}/>}
-        {enableMenu &&  <BurgerMenu img={imgArrows} handleClick={handleClick} />}
-        <div  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
-          <span></span>
-        </div>
+          <div className={styles.menu_logo_block}>
+            <Logo img={logoImg} />
+            <HeaderMenu list={list}/>
+          </div>
+          <div className={styles.menu_block}>
+            {enableButton && <ButtonLaunch handleClick={handleClickBtn}/>}
+            {enableMenu &&  <BurgerMenu img={imgArrows} list={list} handleClick={handleClick} />}
+              <div  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
+                <span></span>
+              </div>
+          </div>
         </div>
       </div>
     </header>

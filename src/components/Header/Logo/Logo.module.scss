@@ -1,17 +1,12 @@
 .header_logo{
-    flex: 0 0 170px;
+    flex: 0 0 0px;
     position: relative;
     z-index: 3;
     cursor: pointer;
+    margin-right: 60px;
   }
 
   .header_logo img{
     max-width: 100%;
     display: block;
   }
-
-//   @media (max-width: 767px){
-//     .header_logo{
-//       flex: 0 0 135px;
-//     }
-// }

@@ -4,7 +4,7 @@ import * as styles from './HeaderMenu.module.scss'
 
 const HeaderMenu = ({list}) => {
     return (
-        <nav className={styles.navigator}>
+        <nav className={styles.navigation}>
         <ul className={styles.header_list}> 
         {list.map((link, idx) => {
           return(
