@@ -1,3 +1,5 @@
+@import './variables.module.scss';
+
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -14,19 +16,18 @@
  * Globals
  */
 body {
-  width: 100vw;
   height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.4;
-  line-height: 28px;
+  font-style: normal;
+  line-height: 24px;
+  z-index: 1;
+  color: $gray;
 }
 
 a {
-  font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.35;
   line-height: 28px;
   text-decoration: none;
 }

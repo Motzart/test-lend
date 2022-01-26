@@ -1,9 +1,31 @@
 // colors
 $black: #100f0f;
-$color_141313: #141313;
+$gray: #848a8f;
+$brand_yellow: #f6821f;
 $color_1d1d1d: #1d1d1d;
 $color_080808: #080808;
-$brang_yelow: #F6821F;
 $color_FFFFFF: #FFFFFF;
 $color_848A8F: #848A8F;
-$color_5A2D1A: #5A2D1A;
+$color_1E1E1F: #1e1e1f;
+$color_5A2D1A: #5a2d1a;
+$color_EAECEF: #eaecef;
+
+// templates
+%tpl_circle {
+  position: absolute;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  background-color: $color_5A2D1A;
+  border-radius: 50%;
+  .innerCircle {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translate(50%, -50%);
+    background-color: $color_EAECEF;
+    border-radius: 50%;
+  }
+}
