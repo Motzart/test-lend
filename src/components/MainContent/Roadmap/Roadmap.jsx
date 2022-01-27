@@ -2,13 +2,16 @@
 import React from 'react'
 // config
 import { RoadMapConfig } from '../../../config/roadmap-config'
+
+import { LanguageSwitcher } from '../../LanguageSwitcher'
+
 // static
 import * as styles from './roadmap.module.scss'
 import activeLine from '../../../images/MainContent/roadmap_active.svg'
 import noActiveLine from '../../../images/MainContent/roadmap_noactive.svg'
 import gradientLine from '../../../images/MainContent/roadmap_gradient_line.svg'
 
-export default function Roadmap() {
+const Roadmap = ({ data }) => {
   // jsxElements
   const imgNoActiveLine = <img src={noActiveLine} alt="Roadmmap active line" />
   const imgNoActiveLineTransform = (
@@ -19,10 +22,10 @@ export default function Roadmap() {
       <div className={styles.innerCircle} />
     </div>
   )
-
   return (
     <section className={styles.roadmap_section}>
-      <h2 className={styles.title}>Roadmap</h2>
+      <LanguageSwitcher lang={data.lang} altLangs={data.alternate_languages} />
+      <h2 className={styles.title}>{data.data.banner_title.text}</h2>
       <div className={styles.roadmap}>
         {RoadMapConfig.oddMilestone.map((el, index) => {
           return (
@@ -111,3 +114,5 @@ export default function Roadmap() {
     </section>
   )
 }
+
+export default Roadmap
