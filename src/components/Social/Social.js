@@ -28,7 +28,9 @@ const Social = () => {
           return(
              <li key={idx} className={styles.social_element}>
               <Link to="/">
+              <div className={styles.social_circle}>
                 <img src={icon} alt={label} />
+                </div>
               </Link>
           </li>
           )
