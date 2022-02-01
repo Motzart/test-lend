@@ -16,7 +16,8 @@ public
 .vscode/
 .env*
 
-# 
+#
 *.lock
-*.DS_Store
+.DS_Store
+*.idea
 
