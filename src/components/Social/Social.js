@@ -22,17 +22,17 @@ const Social = () => {
     ]
 
     return (
-        <nav>
+      <nav>
         <ul className={styles.social_block}> 
         {iconSocial.map(({icon, label}, idx) => {
           return(
              <li key={idx} className={styles.social_element}>
               <Link to="/">
-              <div className={styles.social_circle}>
-                <img src={icon} alt={label} />
-                </div>
+               <div className={styles.social_circle}>
+                  <img src={icon} alt={label} />
+               </div>
               </Link>
-          </li>
+             </li>
           )
             })}
         </ul>
