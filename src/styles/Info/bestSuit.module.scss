@@ -8,8 +8,8 @@
   row-gap: 32px;
   .title {
   }
-  .item {
-    width: 555px;
+  .block {
+    max-width: 555px;
     padding: 24px;
     background: linear-gradient(180deg, #1e1e1f 0%, rgba(30, 30, 31, 0) 100%);
     border: 1px solid #1e1e1f;
@@ -35,12 +35,26 @@
     .btn {
       width: 161px;
       height: 48px;
+      font-weight: 600;
       background: #f6821f;
       border-radius: 8px;
       color: #eaecef;
+      &:hover {
+        background-color: $color_5A2D1A;
+      }
     }
     .img_transform {
       transform: scale(-1, 1);
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .block {
+      padding: 12px 12px 40px;
+      img {
+        &:nth-child(2n) {
+          position: absolute;
+        }
+      }
     }
   }
 }

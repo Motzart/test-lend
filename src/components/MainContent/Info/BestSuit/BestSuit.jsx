@@ -11,18 +11,18 @@ export default function BestSuit() {
   return (
     <div className={styles.best_suit}>
       <h2 className={styles.title}>Сhoose what suits you best</h2>
-      <div className={styles.item}>
+      <div className={styles.block}>
         <div className={styles.inner_block}>
           <img
-            width={167}
-            height={167}
+            width={149}
+            height={149}
             src={TriangleImg}
             alt="Triangle shape"
           />
           <img src={CurrencyDollarImg} alt="Currency circle dollar icon" />
           <img
-            width={167}
-            height={167}
+            width={149}
+            height={149}
             src={TriangleImg}
             className={styles.img_transform}
             alt="Triangle shape"
@@ -36,18 +36,18 @@ export default function BestSuit() {
           Use liquidity
         </button>
       </div>
-      <div className={styles.item}>
+      <div className={styles.block}>
         <div className={styles.inner_block}>
           <img
-            // width={167}
-            // height={167}
+            width={149}
+            height={149}
             src={TriangleImg}
             alt="Triangle shape"
           />
           <img src={RefreshImg} alt="Finance refresh icon" />
           <img
-            // width={167}
-            // height={167}
+            width={149}
+            height={149}
             src={TriangleImg}
             className={styles.img_transform}
             alt="Triangle shape"
