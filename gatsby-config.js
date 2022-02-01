@@ -20,6 +20,7 @@ module.exports = {
         schemas: {
           homepage: require('./custom_types/homepage.json'),
           navigation: {},
+          page: {},
         },
       },
     },
