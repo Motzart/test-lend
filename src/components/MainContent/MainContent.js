@@ -4,14 +4,12 @@ import React from 'react'
 import * as styles from './mainContent.module.scss'
 // components
 import Roadmap from './Roadmap/Roadmap'
-import Social from '../Social/Social'
 
-export const MainContent = () => {
+export const MainContent = ({ pageContent }) => {
   return (
     <main className={styles.container}>
       <section className={styles.information_section}></section>
-      <Roadmap />
-      <Social />
+      <Roadmap data={pageContent} />
       <section className={styles.team_section}></section>
       <section className={styles.community_section}></section>
     </main>
