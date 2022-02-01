@@ -1,0 +1,46 @@
+@import '../variables.module.scss';
+
+.best_suit {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 32px;
+  .title {
+  }
+  .item {
+    width: 555px;
+    padding: 24px;
+    background: linear-gradient(180deg, #1e1e1f 0%, rgba(30, 30, 31, 0) 100%);
+    border: 1px solid #1e1e1f;
+    box-sizing: border-box;
+    border-radius: 16px;
+    text-align: center;
+
+    .inner_block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 16px;
+      background: #141313;
+    }
+    .sub_title {
+      margin: 30px 0 18px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .text {
+      margin-bottom: 50px;
+    }
+    .btn {
+      width: 161px;
+      height: 48px;
+      background: #f6821f;
+      border-radius: 8px;
+      color: #eaecef;
+    }
+    .img_transform {
+      transform: scale(-1, 1);
+    }
+  }
+}
