@@ -1,12 +1,18 @@
-.header_logo{
-    flex: 0 0 0px;
-    position: relative;
-    z-index: 3;
-    cursor: pointer;
-    margin-right: 60px;
+.header_logo {
+  flex: 0 0 0px;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  margin-right: 60px;
+  @media only screen and (max-width: 1000px) {
+    margin-right: 20px;
   }
+  @media only screen and (max-width: 500px) {
+    margin-right: 0px;
+  }
+}
 
-  .header_logo img{
-    max-width: 100%;
-    display: block;
-  }
+.header_logo img {
+  max-width: 100%;
+  display: block;
+}

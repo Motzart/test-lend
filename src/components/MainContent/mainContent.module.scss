@@ -1,23 +1,43 @@
 @import '../../styles/variables.module.scss';
 
-.container {
-  min-height: calc(100vh - 895px);
-  background: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
+.main {
+  padding-top: 124px;
 
-  .information_section {
-    display: flex;
-  }
-  .roadmap_section {
-    display: flex;
-  }
-  .team_section {
-    display: flex;
-  }
-  .community_section {
-    display: flex;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc((100% - 100vw) / 2);
+    width: 100vw;
+    height: 100%;
+    background: $line_gradient;
+    z-index: -1;
   }
 
-  h2 {
-    color: rgba($color_EAECEF, 0.87);
+  .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 124px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .team_section {
+      display: flex;
+    }
+    .community_section {
+      display: flex;
+    }
+
+    h2,
+    h3 {
+      color: rgba($color_EAECEF, 0.87);
+    }
+    h2 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 64px;
+      text-align: center;
+    }
   }
 }

@@ -2,8 +2,14 @@
 
 .footer {
   min-height: 312px;
-  background: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
-
+  &::before {
+    content: '';
+    position: absolute;
+    left: calc((100% - 100vw) / 2);
+    width: 100vw;
+    min-height: 312px;
+    background: $line_gradient;
+  }
   .social {
     display: flex;
   }
