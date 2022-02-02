@@ -19,7 +19,7 @@ body {
   height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   line-height: 24px;
   z-index: 1;
@@ -52,4 +52,24 @@ em {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1140px;
+  margin: 0px auto;
+  @media only screen and (max-width: 1280px) {
+    max-width: 800px;
+  }
+  @media only screen and (max-width: 1000px) {
+    max-width: 700px;
+    padding-right: 12px;
+  }
+  @media only screen and (max-width: 767px) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 400px) {
+    padding: 0 20px;
+  }
 }

@@ -1,4 +1,6 @@
-import React, {useState, useRef} from 'react'
+// library
+import React, { useState, useRef } from 'react'
+// components
 import ButtonLaunch from '../ButtonLaunch/ButtonLaunch'
 import Logo from '../Header/Logo/Logo'
 import HeaderMenu from '../Header/HeaderMenu/HeaderMenu'
@@ -10,83 +12,88 @@ import docsArrows from '../../images/header/docs_icon.svg'
 import * as styles from './header.module.scss'
 
 export const Header = () => {
-  const [enableButton, setEnableButton] = useState(true);
-  const [enableMenu, setEnableBurgerMenu] = useState(false);
-  const burgerEl = useRef(null);
- 
-  const[menu, setMenu] = useState(false);
+  const [enableButton, setEnableButton] = useState(true)
+  const [enableMenu, setEnableBurgerMenu] = useState(false)
+  const burgerEl = useRef(null)
+
+  const [menu, setMenu] = useState(false)
 
   const addClasses = (element, nameClass) => {
-    element.contains(nameClass) ? 
-    element.remove(nameClass) :
-    element.add(nameClass);
+    element.contains(nameClass)
+      ? element.remove(nameClass)
+      : element.add(nameClass)
   }
 
   const noScroll = () => {
-    if(!menu){
-       document.body.style.overflow = "hidden";
-       setMenu(true);
-     } else{
-      document.body.style.overflow = "visible";
-      setMenu(false);
-     }
+    if (!menu) {
+      document.body.style.overflow = 'hidden'
+      setMenu(true)
+    } else {
+      document.body.style.overflow = 'visible'
+      setMenu(false)
+    }
   }
 
-  const handleClickBtn = e => {
-    console.log('click button Launch app');
+  const handleClickBtn = (e) => {
+    console.log('click button Launch app')
   }
 
-  const handleClick = e => {
-    const classEl = burgerEl.current.classList ;
-    
-    addClasses(classEl, `${styles.active}`);
-   
-    setEnableButton(!enableButton);
-    setEnableBurgerMenu(!enableMenu);
+  const handleClick = (e) => {
+    const classEl = burgerEl.current.classList
 
-    noScroll();
+    addClasses(classEl, `${styles.active}`)
+
+    setEnableButton(!enableButton)
+    setEnableBurgerMenu(!enableMenu)
+
+    noScroll()
   }
 
   const list = [
     {
-      label: "Docs",
+      label: 'Docs',
       icon: docsArrows,
     },
     {
-      label: "Products",
+      label: 'Products',
       icon: '',
     },
     {
-      label: "Roadmap",
+      label: 'Roadmap',
       icon: '',
     },
     {
-      label: "Team",
+      label: 'Team',
       icon: '',
     },
     {
-      label: "Partners",
+      label: 'Partners',
       icon: '',
     },
   ]
 
-    return (
+  return (
+    // transform: translate3d(0);
     <header className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.header_body}>
-          <div className={styles.menu_logo_block}>
-            <Logo img={logoImg} />
-            <HeaderMenu list={list}/>
-          </div>
-          <div className={styles.menu_block}>
-            {enableButton && <ButtonLaunch handleClick={handleClickBtn}/>}
-            {enableMenu &&  <BurgerMenu img={imgArrows} list={list} handleClick={handleClick} />}
-              <button  onClick={handleClick} className={styles.header_burger} ref={burgerEl}>
-                <span></span>
-              </button>
-          </div>
+      <div className={styles.header_body}>
+        <div className={styles.menu_logo_block}>
+          <Logo img={logoImg} />
+          <HeaderMenu list={list} />
+        </div>
+        <div className={styles.menu_block}>
+          {enableButton && <ButtonLaunch handleClick={handleClickBtn} />}
+          {enableMenu && (
+            <BurgerMenu img={imgArrows} list={list} handleClick={handleClick} />
+          )}
+          <button
+            onClick={handleClick}
+            className={styles.header_burger}
+            ref={burgerEl}
+          >
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
-  );
+  )
 }
