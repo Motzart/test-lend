@@ -1,8 +1,9 @@
 {
-  "name": "PembrockLandingv1",
+  "name": "pembrock-landing-v1",
   "description": "Pembrock landing page v.1",
   "dependencies": {
     "@prismicio/react": "^2.0.3",
+    "dotenv": "^15.0.0",
     "gatsby": "^4.3.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.3.0",
