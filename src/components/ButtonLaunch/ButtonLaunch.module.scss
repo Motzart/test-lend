@@ -1,6 +1,6 @@
 @import '../../styles/variables.module.scss';
 
-.button_connect{
+.button_connect {
     background-color: $brand_yellow;
     color: $color_FFFFFF;
     width: 137px;
@@ -13,7 +13,7 @@
 
     cursor: pointer;
 
-  .button_text{
+  .button_text {
     font-family: Proxima Nova Cn Lt;
     font-style: normal;
     font-weight: 600;
@@ -21,7 +21,7 @@
     line-height: 24px;
   }
 
-  &:hover{
+  &:hover {
      background-color: $color_5A2D1A;
   } 
 }

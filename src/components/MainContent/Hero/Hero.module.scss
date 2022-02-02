@@ -1,6 +1,6 @@
 @import '../../../styles/variables.module.scss';
 
-.block_hero{
+.block_hero {
 margin-top: 60px;
 padding-top: 98px;
 padding-bottom: 60px;
@@ -10,18 +10,18 @@ justify-content: space-between;
 background-color: $black;
 }
 
-.hero_text{
+.hero_text {
    width: 50%;
    height: auto;
 }
 
 @media (max-width: 767px){
-    .hero_text{
+    .hero_text {
         width: 100%;
      }
   };
 
-.title{
+.title {
     margin-bottom: 16px;
     font-family: Proxima Nova;
     font-style: normal;
@@ -31,24 +31,24 @@ background-color: $black;
     color: $color_EAECEF;
 }
 
-.title_NEAR{
+.title_near {
     margin-left: 10px;
     color: $brand_yellow;
 }
 
 @media (max-width: 767px){
-    .title{
+    .title {
         font-size: 32px;
         line-height: 48px;
     }
     
-    .title_NEAR{
+    .title_near {
         color: $color_EAECEF;
     }
   };
 
 .text_content {
-    margin-bottom: 40px;
+margin-bottom: 40px;
 font-family: Proxima Nova;
 font-style: normal;
 font-weight: normal;
@@ -58,13 +58,13 @@ line-height: 24px;
 color: $color_848A8F;
 }
 
-.hero_img{
+.hero_img {
     width: auto;
     height: auto;
 }
 
 @media (max-width: 767px){
-    .hero_img{
+    .hero_img {
        display: none;
     }
   };

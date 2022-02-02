@@ -1,6 +1,6 @@
 @import '../../styles/variables.module.scss';
 
-.container{
+.container {
   max-width: 1140px;
   margin: 0px auto;
   padding: 0px 20px;
@@ -13,7 +13,7 @@
   left: 0;
   z-index: 50;
 
-  &::before{
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -24,7 +24,7 @@
     z-index: 2;
   }
 
-  .header_body{
+  .header_body {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -32,13 +32,13 @@
     align-items: center;
   }
 
-  .menu_logo_block{
+  .menu_logo_block {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .menu_block{
+  .menu_block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +68,7 @@
   background-color: transparent;
     } 
   
-    .header_burger span{
+    .header_burger span {
       position: absolute;
       background-color: $brand_yellow;
       left: 0;
@@ -79,7 +79,7 @@
     }
   
     .header_burger::before,
-    .header_burger::after{
+    .header_burger::after {
       content: '';
       background-color: $brand_yellow;
       position: absolute;
@@ -89,25 +89,25 @@
       transition: all 0.3s ease 0s;
     }
   
-    .header_burger::before{
+    .header_burger::before {
       top: 0;
     }
   
-    .header_burger::after{
+    .header_burger::after {
       bottom: 0;
     }
   
-    .header_burger.active::before{
+    .header_burger.active::before {
       transform:rotate(45deg);
       top: 9px;
     }
   
-    .header_burger.active::after{
+    .header_burger.active::after {
       transform:rotate(-45deg);
       bottom: 9px;
     }
   
-    .header_burger.active span{
+    .header_burger.active span {
       transform:scale(0);
     }
 }
