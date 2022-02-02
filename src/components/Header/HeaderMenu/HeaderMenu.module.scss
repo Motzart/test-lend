@@ -1,13 +1,13 @@
 @import '../../../styles/variables.module.scss';
 
 
-.header_list{
+.header_list {
     display: flex;
     position: relative;
     z-index: 2;
   }
 
-  .header_link{
+  .header_link {
     list-style: none;
     color: $color_848A8F;
     text-decoration: none;
@@ -30,12 +30,12 @@
   } 
   }
 
-  .icon{
+  .icon {
     margin-left: 5px;
   }
 
   @media (max-width: 767px){
-    .navigation{
+    .navigation {
       display: none;
     }
   };
