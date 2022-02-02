@@ -1,13 +1,8 @@
 @import '../../../styles/variables.module.scss';
 
 .block_hero {
-margin-top: 60px;
-padding-top: 98px;
-padding-bottom: 60px;
 display: flex;
 justify-content: space-between;
-
-background-color: $black;
 }
 
 .hero_text {
@@ -59,8 +54,8 @@ color: $color_848A8F;
 }
 
 .hero_img {
-    width: auto;
-    height: auto;
+    // width: auto;
+    // height: auto;
 }
 
 @media (max-width: 767px){
