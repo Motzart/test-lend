@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import twitter from '../../images/social/twitter.svg'
 import elips from '../../images/social/elips.svg'
 import telegram from '../../images/social/telegram.svg'
@@ -30,11 +29,11 @@ const Social = () => {
         {iconSocial.map(({icon, label, url}, idx) => {
           return(
              <li key={idx} className={styles.social_element}>
-              <Link to={url} target='_blank' rel='noreferrer nofollow noopener'>
+              <a href={url} target='_blank' rel='noreferrer nofollow noopener'>
                <div className={styles.social_circle}>
                   <img src={icon} alt={label} />
                </div>
-              </Link>
+              </a>
              </li>
           )
             })}
