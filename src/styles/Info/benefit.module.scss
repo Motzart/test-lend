@@ -1,0 +1,17 @@
+@import '../variables.module.scss';
+
+.benefit {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+
+  .item {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+}
