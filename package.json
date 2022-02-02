@@ -1,5 +1,7 @@
 {
   "name": "pembrock-landing-v1",
+  "version": "0.0.1",
+  "license": "MIT OR Apache-2.0",
   "description": "Pembrock landing page v.1",
   "dependencies": {
     "@prismicio/react": "^2.0.3",
