@@ -36,12 +36,13 @@ export const Footer = () => {
         <div className={styles.footer_logo}>
         <Logo img={logoImg} />
         </div>
-        <div className={styles.footer_navigation}>
-          <FooterMenu list={list} className={styles.footer_menu}/>
-        </div>
+        
         <p className={styles.social_text}>We are in social networks</p>
         <div className={styles.social}>
           <Social className={styles.social}/>
+        </div>
+        <div className={styles.footer_navigation}>
+          <FooterMenu list={list} className={styles.footer_menu}/>
         </div>
       </div>
       <div className={styles.line}></div>

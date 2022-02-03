@@ -1,11 +1,10 @@
 @import '../../../styles/variables.module.scss';
 
-
 .header_list {
     display: flex;
   }
   
-    @media (max-width: 767px){
+    @media (max-width: 767px) {
         .header_list {
             display: block;
           }
