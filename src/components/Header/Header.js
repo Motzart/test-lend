@@ -7,7 +7,7 @@ import HeaderMenu from '../Header/HeaderMenu/HeaderMenu'
 import BurgerMenu from '../Header/Burger/BurgerMenu'
 import logoImg from '../../images/header/header_logo.svg'
 import imgArrows from '../../images/header/arrows.svg'
-import docsArrows from '../../images/header/docs_icon.svg'
+import list from '../../data/menu'
 // styles
 import * as styles from './header.module.scss'
 
@@ -48,29 +48,6 @@ export const Header = () => {
 
     noScroll()
   }
-
-  const list = [
-    {
-      label: 'Docs',
-      icon: docsArrows,
-    },
-    {
-      label: 'Products',
-      icon: '',
-    },
-    {
-      label: 'Roadmap',
-      icon: '',
-    },
-    {
-      label: 'Team',
-      icon: '',
-    },
-    {
-      label: 'Partners',
-      icon: '',
-    },
-  ]
 
   return (
     // transform: translate3d(0);
