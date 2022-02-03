@@ -9,7 +9,7 @@ const ListPartners = ({ partnersList }) => {
         return (
           <li key={idx}>
             <div className={styles.one_partner}>
-              <img src={icon} className={styles.img_partner} alt="icon" />
+              <img src={icon} alt="icon" />
               <p className={styles.text}>{text}</p>
             </div>
           </li>
