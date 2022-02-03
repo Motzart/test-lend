@@ -4,7 +4,7 @@ import * as styles from './FooterMenu.module.scss'
 
 const FooterMenu = ({list}) => {
     return (
-        <nav className={styles.navigation}>
+        <nav>
         <ul className={styles.header_list}> 
         {list.map((link, idx) => {
           return(

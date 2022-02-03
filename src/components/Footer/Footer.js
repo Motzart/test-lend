@@ -42,7 +42,7 @@ export const Footer = () => {
           <Social className={styles.social}/>
         </div>
         <div className={styles.footer_navigation}>
-          <FooterMenu list={list} className={styles.footer_menu}/>
+          <FooterMenu list={list} />
         </div>
       </div>
       <div className={styles.line}></div>
