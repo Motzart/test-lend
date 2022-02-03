@@ -1,6 +1,6 @@
 import docsArrows from '../images/header/docs_icon.svg'
 
-const list = [
+const menuList = [
     {
       label: 'Docs',
       icon: docsArrows,
@@ -23,4 +23,4 @@ const list = [
     },
   ];
 
-  export default list;
+  export default menuList;

@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../Header/Logo/Logo'
 import FooterMenu from './FooterMenu/FooterMenu'
 import Social from '../Social/Social'
-import list from '../../data/menu'
+import menuList from '../../data/menu'
 import logoImg from '../../images/header/header_logo.svg'
 // styles
 import * as styles from './footer.module.scss'
@@ -21,7 +21,7 @@ export const Footer = () => {
           <Social className={styles.social}/>
         </div>
         <div className={styles.footer_navigation}>
-          <FooterMenu list={list} />
+          <FooterMenu menuList={menuList} />
         </div>
       </div>
       <div className={styles.line}></div>

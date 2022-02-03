@@ -7,7 +7,7 @@ import HeaderMenu from '../Header/HeaderMenu/HeaderMenu'
 import BurgerMenu from '../Header/Burger/BurgerMenu'
 import logoImg from '../../images/header/header_logo.svg'
 import imgArrows from '../../images/header/arrows.svg'
-import list from '../../data/menu'
+import menuList from '../../data/menu'
 // styles
 import * as styles from './header.module.scss'
 
@@ -55,12 +55,12 @@ export const Header = () => {
       <div className={styles.header_body}>
         <div className={styles.menu_logo_block}>
           <Logo img={logoImg} />
-          <HeaderMenu list={list} />
+          <HeaderMenu menuList={menuList} />
         </div>
         <div className={styles.menu_block}>
           {enableButton && <ButtonLaunch handleClick={handleClickBtn} />}
           {enableMenu && (
-            <BurgerMenu img={imgArrows} list={list} handleClick={handleClick} />
+            <BurgerMenu img={imgArrows} menuList={menuList} handleClick={handleClick} />
           )}
           <button
             onClick={handleClick}

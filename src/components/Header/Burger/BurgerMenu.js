@@ -3,14 +3,14 @@ import { Link } from 'gatsby'
 import Social from '../../Social/Social'
 import * as styles from './BurgerMenu.module.scss'
 
-const BurgerMenu = ({img, list}) => {
+const BurgerMenu = ({img, menuList}) => {
     return (
       <nav className={styles.header_menu}>
            <ul className={styles.header_list}> 
               <li className={styles.li_a}>
                 <Link to="/" className={styles.header_link_menu}>Menu</Link>
               </li>
-        {list.map((link, idx) => {
+        {menuList.map((link, idx) => {
           return(
              <li className={styles.li_b} key={idx}>
               <Link to="/" className={styles.header_link}>

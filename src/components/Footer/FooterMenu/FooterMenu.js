@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby'
 import * as styles from './FooterMenu.module.scss'
 
-const FooterMenu = ({list}) => {
+const FooterMenu = ({menuList}) => {
     return (
         <nav>
         <ul className={styles.header_list}> 
-        {list.map((link, idx) => {
+        {menuList.map((link, idx) => {
           return(
              <li key={idx} className={styles.list_el}>
               <Link to="/" className={styles.header_link}>

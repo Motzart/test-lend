@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'gatsby'
 import * as styles from './HeaderMenu.module.scss'
 
-const HeaderMenu = ({list}) => {
+const HeaderMenu = ({menuList}) => {
     return (
         <nav className={styles.navigation}>
         <ul className={styles.header_list}> 
-        {list.map((link, idx) => {
+        {menuList.map((link, idx) => {
           return(
              <li key={idx}>
               <Link to="/" className={styles.header_link}>
