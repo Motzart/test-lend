@@ -19,13 +19,25 @@
       border-radius: 16px;
       background-color: transparent;
       .name {
-        margin: 8px 0 4px;
+        margin: 16px 0 8px;
+        font-size: 18px;
         color: $color_EAECEF;
       }
       .bio {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
+      }
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    h2.title {
+      text-align: left;
+    }
+    .team_block .contributor {
+      width: 100%;
+      .bio {
+        font-size: 16px;
       }
     }
   }

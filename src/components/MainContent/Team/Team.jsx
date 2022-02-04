@@ -11,10 +11,8 @@ export default function Team() {
       <h2 className={styles.title}>Team</h2>
       <div className={styles.team_block}>
         <div className={styles.contributor}>
-          <div className={styles.photo}>
-            <img src={PhotoCEO} alt="CEO-founder" />
-          </div>
-          <span className={styles.name}>Igor Stadnyk</span>
+          <img src={PhotoCEO} alt="CEO-founder" />
+          <p className={styles.name}>Igor Stadnyk</p>
           <p className={styles.bio}>
             Founder and CEO with software development background and proven
             track record of launching and leading blockchain projects since
@@ -23,10 +21,8 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <div className={styles.photo}>
-            <img src={PhotoCEO} alt="CEO-founder" />
-          </div>
-          <span className={styles.name}>Vitalii Dmytrenko</span>
+          <img src={PhotoCEO} alt="CEO-founder" />
+          <p className={styles.name}>Vitalii Dmytrenko</p>
           <p className={styles.bio}>
             CTO and Core Developer with more than 2 decades of experience in
             software and hardware development, reverse engineering and
@@ -34,10 +30,8 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <div className={styles.photo}>
-            <img src={PhotoCEO} alt="CEO-founder" />
-          </div>
-          <span className={styles.name}>Oleksandr Molotsylo</span>
+          <img src={PhotoCEO} alt="CEO-founder" />
+          <p className={styles.name}>Oleksandr Molotsylo</p>
           <p className={styles.bio}>
             Front End Lead Developer with over 10 years of experience developing
             in different programming languages. Blockchain fan for the last 4
@@ -45,10 +39,8 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <div className={styles.photo}>
-            <img src={PhotoCEO} alt="CEO-founder" />
-          </div>
-          <span className={styles.name}>Ivan Skrypachov</span>
+          <img src={PhotoCEO} alt="CEO-founder" />
+          <p className={styles.name}>Ivan Skrypachov</p>
           <p className={styles.bio}>
             Project Manager with 5+ years in Product IT. Guided by gained
             experience, Ivan smoothly manages teams of up to 30 people and
