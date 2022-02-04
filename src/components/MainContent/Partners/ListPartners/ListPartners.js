@@ -8,7 +8,7 @@ const ListPartners = ({ partnersList }) => {
       {partnersList.map(({ icon, text }, idx) => {
         return (
           <li className={styles.one_partner} key={idx}>
-            <img src={icon} alt="icon" />
+            <img src={icon} className={styles.icon_partners} alt="icon" />
             <p className={styles.text}>{text}</p>
           </li>
         )
