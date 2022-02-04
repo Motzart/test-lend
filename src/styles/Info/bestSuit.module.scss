@@ -41,14 +41,7 @@
       }
       .btn {
         width: 161px;
-        height: 48px;
-        font-weight: 600;
-        background-color: $brand_yellow;
-        border-radius: 8px;
-        color: $color_EAECEF;
-        &:hover {
-          background-color: $color_5A2D1A;
-        }
+        @extend %tpl_btn;
       }
       .img_transform {
         transform: scale(-1, 1);
