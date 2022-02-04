@@ -2,9 +2,15 @@
 
 .list_partners {
   display: flex;
-  //   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .list_partners {
+    justify-content: start;
+    overflow-x: auto;
+  }
 }
 
 .one_partner {
@@ -14,19 +20,12 @@
   margin-right: 32px;
   margin-bottom: 15px;
   padding: 12px 24px;
-  width: auto;
+  //   width: auto;
   height: 64px;
 
   background: $color_1E1E1F;
   border-radius: 16px;
 }
-
-// .one_partner:not(:last-child) {
-//   margin-right: 8px;
-//   background-color: aqua;
-//   width: 50px;
-//   color: antiquewhite;
-// }
 
 .text {
   font-family: Proxima Nova;

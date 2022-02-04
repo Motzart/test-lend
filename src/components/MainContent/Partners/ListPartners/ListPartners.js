@@ -7,11 +7,9 @@ const ListPartners = ({ partnersList }) => {
     <ul className={styles.list_partners}>
       {partnersList.map(({ icon, text }, idx) => {
         return (
-          <li key={idx}>
-            <div className={styles.one_partner}>
-              <img src={icon} alt="icon" />
-              <p className={styles.text}>{text}</p>
-            </div>
+          <li className={styles.one_partner} key={idx}>
+            <img src={icon} alt="icon" />
+            <p className={styles.text}>{text}</p>
           </li>
         )
       })}
