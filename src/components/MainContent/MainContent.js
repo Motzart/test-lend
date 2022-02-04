@@ -7,6 +7,7 @@ import Hero from './Hero/Hero'
 import Info from './Info/Info'
 import Roadmap from './Roadmap/Roadmap'
 import Team from './Team/Team'
+import Partners from './Partners/Partners'
 
 export const MainContent = ({ pageContent }) => {
   return (
@@ -16,6 +17,7 @@ export const MainContent = ({ pageContent }) => {
         <Info />
         <Roadmap data={pageContent} />
         <Team />
+        <Partners />
         <section className={styles.community_section}></section>
       </div>
     </main>

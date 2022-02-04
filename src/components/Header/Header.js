@@ -60,7 +60,11 @@ export const Header = () => {
         <div className={styles.menu_block}>
           {enableButton && <ButtonLaunch handleClick={handleClickBtn} />}
           {enableMenu && (
-            <BurgerMenu img={imgArrows} menuList={menuList} handleClick={handleClick} />
+            <BurgerMenu
+              img={imgArrows}
+              menuList={menuList}
+              handleClick={handleClick}
+            />
           )}
           <button
             onClick={handleClick}
