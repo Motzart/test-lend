@@ -50,7 +50,6 @@ export const Header = () => {
   }
 
   return (
-    // transform: translate3d(0);
     <header className={styles.header}>
       <div className={styles.header_body}>
         <div className={styles.menu_logo_block}>

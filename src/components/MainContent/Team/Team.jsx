@@ -10,7 +10,7 @@ import PhotoProject from '../../../images/MainContent/Photo/Ivan_Skrypachov.png'
 
 export default function Team() {
   return (
-    <section className={styles.team_section}>
+    <section className={styles.team_section} id="team">
       <h2 className={styles.title}>Team</h2>
       <div className={styles.team_block}>
         <div className={styles.contributor}>

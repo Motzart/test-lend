@@ -9,7 +9,7 @@ const HeaderMenu = ({ menuList }) => {
         {menuList.map((link, idx) => {
           return (
             <li key={idx}>
-              <Link to="/" className={styles.header_link}>
+              <Link to={link.href} className={styles.header_link}>
                 {link.label}
               </Link>
               {link.icon && (

@@ -27,7 +27,7 @@ const Partners = () => {
   ]
 
   return (
-    <section>
+    <section id="partners">
       <h2 className={styles.title_partners}>Our Partners</h2>
       <ListPartners partnersList={partnersList} />
     </section>

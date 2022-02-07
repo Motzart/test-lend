@@ -9,7 +9,7 @@ import RocketImg from '../../../../images/MainContent/rocket_icon.svg'
 
 export default function Bnefit() {
   return (
-    <div className={styles.benefit}>
+    <div className={styles.benefit} id="products">
       <div className={styles.item}>
         <img width={76} height={76} src={CommunityImg} alt="Community icon" />
         <p>

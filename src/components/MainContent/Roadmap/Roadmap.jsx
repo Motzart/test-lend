@@ -23,7 +23,7 @@ const Roadmap = ({ data }) => {
     </div>
   )
   return (
-    <section className={styles.roadmap_section}>
+    <section className={styles.roadmap_section} id="roadmap">
       <LanguageSwitcher lang={data.lang} altLangs={data.alternate_languages} />
       <h2 className={styles.title}>{data.data.banner_title.text}</h2>
       <div className={styles.roadmap}>
