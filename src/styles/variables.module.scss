@@ -43,3 +43,15 @@ $line_gradient: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
     background-color: $color_5A2D1A;
   }
 }
+
+// mixin
+// hide scroll but allow scrolling
+@mixin tpl_hide_scrollbar {
+  // note that only mixin can be used in media queries but not templates
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+}
