@@ -3,7 +3,10 @@ import React from 'react'
 // styles
 import * as styles from '../../../styles/mainContent/team.module.scss'
 // static
-import PhotoCEO from '../../../images/MainContent/Photo/ceo_photo.png'
+import PhotoCEO from '../../../images/MainContent/Photo/Igor_Stadnyk.png'
+import PhotoBack from '../../../images/MainContent/Photo/Vitalii_Dmytrenko.png'
+import PhotoFront from '../../../images/MainContent/Photo/Oleksandr_Molotsylo.png'
+import PhotoProject from '../../../images/MainContent/Photo/Ivan_Skrypachov.png'
 
 export default function Team() {
   return (
@@ -21,7 +24,7 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <img src={PhotoCEO} alt="CEO-founder" />
+          <img src={PhotoBack} alt="Back-end teamlead" />
           <p className={styles.name}>Vitalii Dmytrenko</p>
           <p className={styles.bio}>
             CTO and Core Developer with more than 2 decades of experience in
@@ -30,7 +33,7 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <img src={PhotoCEO} alt="CEO-founder" />
+          <img src={PhotoFront} alt="Front-end teamlead" />
           <p className={styles.name}>Oleksandr Molotsylo</p>
           <p className={styles.bio}>
             Front End Lead Developer with over 10 years of experience developing
@@ -39,7 +42,7 @@ export default function Team() {
           </p>
         </div>
         <div className={styles.contributor}>
-          <img src={PhotoCEO} alt="CEO-founder" />
+          <img src={PhotoProject} alt="Project manager" />
           <p className={styles.name}>Ivan Skrypachov</p>
           <p className={styles.bio}>
             Project Manager with 5+ years in Product IT. Guided by gained

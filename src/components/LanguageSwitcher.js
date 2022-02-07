@@ -23,7 +23,9 @@ export const LanguageSwitcher = ({ lang, altLangs }) => {
   }
 
   return (
-    <div style={{ width: 'max-content', margin: '0 auto 50px' }}>
+    <div
+      style={{ width: 'max-content', margin: '0 auto 50px', display: 'none' }}
+    >
       <select value={lang} onChange={handleLangChange}>
         {currentLangOption}
         {alternateLangOptions}
