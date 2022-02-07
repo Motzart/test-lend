@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/Info/security.module.scss'
+import * as styles from '../../../../styles/MainContent/Info/security.module.scss'
 // static
 import TriangleImg from '../../../../images/MainContent/triangle_security.svg'
 import LockImg from '../../../../images/MainContent/lock.svg'

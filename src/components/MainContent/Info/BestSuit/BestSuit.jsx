@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/Info/bestSuit.module.scss'
+import * as styles from '../../../../styles/MainContent/Info/bestSuit.module.scss'
 // static
 import TriangleImg from '../../../../images/MainContent/triangle.svg'
 import CurrencyDollarImg from '../../../../images/MainContent/currency_circle_dollar.svg'
