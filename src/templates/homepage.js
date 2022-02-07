@@ -4,12 +4,14 @@ import { graphql } from 'gatsby'
 // components
 import { Layout } from '../components/Layout'
 import { Seo } from '../components/Seo'
+import Hero from '../components/Hero/Hero'
 import { MainContent } from '../components/MainContent/MainContent'
 
 const Homepage = ({ data }) => {
   return (
     <Layout isHomepage>
       <Seo title="Home" />
+      <Hero />
       <MainContent pageContent={data.prismicHomepage} />
     </Layout>
   )
