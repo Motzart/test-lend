@@ -3,11 +3,13 @@ import land from '../../../images/MainContent/Community/land.svg'
 import dog from '../../../images/MainContent/Community/dog.png'
 // styles
 import * as styles from './Community.module.scss'
+import * as background from '../../../styles/variables.module.scss'
 import Social from '../../Social/Social'
 // components
 
 const Community = () => {
-  const backgroundColor = { backgroundColor: 'white' }
+  const backgroundColor = { backgroundColor: background.white }
+
   return (
     <section className={styles.community_section}>
       <img src={land} className={styles.land_icon} alt="land" />
