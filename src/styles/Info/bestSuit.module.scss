@@ -26,7 +26,7 @@
 
       .inner_block {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         border-radius: 16px;
         background-color: $color_141313;
@@ -41,18 +41,16 @@
       }
       .btn {
         width: 161px;
-        height: 48px;
-        font-weight: 600;
-        background-color: $brand_yellow;
-        border-radius: 8px;
-        color: $color_EAECEF;
-        &:hover {
-          background-color: $color_5A2D1A;
-        }
+        @extend %tpl_btn;
       }
       .img_transform {
         transform: scale(-1, 1);
       }
+    }
+  }
+  @media only screen and (max-width: 1280px) {
+    .container {
+      justify-content: center;
     }
   }
   @media only screen and (max-width: 700px) {
@@ -67,13 +65,21 @@
       }
     }
   }
-  @media only screen and (max-width: 420px) {
+  @media only screen and (max-width: 680px) {
     .container {
       .block {
         padding: 12px 12px 40px;
-        img {
-          &:nth-child(2n) {
-            position: absolute;
+        .inner_block {
+          position: relative;
+          img {
+            width: 120px;
+            height: 120px;
+            &:nth-child(2n) {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
         }
       }
