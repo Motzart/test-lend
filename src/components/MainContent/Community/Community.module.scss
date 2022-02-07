@@ -3,10 +3,12 @@
 .community_section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  //   justify-content: center;
+  position: relative;
 
   width: auto;
-  height: 280px;
+  height: auto;
+  margin-bottom: 146px;
 
   background: $brand_yellow;
   box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.08),
@@ -14,7 +16,92 @@
   border-radius: 24px;
 }
 
+@media (max-width: 660px) {
+  .community_section {
+    height: 514px;
+  }
+}
+
 .land_icon {
-  display: block;
-  opacity: 0.7;
+  //   display: block;
+  opacity: 0.6;
+}
+
+.test {
+  position: absolute;
+  display: flex;
+  padding: 24px;
+}
+
+@media (max-width: 660px) {
+  .test {
+    display: block;
+    // padding: 0px;
+  }
+}
+
+.text_block {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+@media (max-width: 660px) {
+  .text_block {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.titl_block {
+  margin-bottom: 8px;
+
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #eaecef;
+}
+
+@media (max-width: 660px) {
+  .titl_block {
+    font-size: 24px;
+    line-height: 32px;
+
+    margin-bottom: 15px;
+  }
+}
+
+.p_block {
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 35px;
+
+  color: #eaecef;
+}
+
+.dog_block {
+  position: relative;
+  width: 340px;
+}
+@media (max-width: 660px) {
+  .dog_block {
+    width: auto;
+  }
+}
+
+.dog_icon {
+  position: absolute;
+  bottom: 0;
+  //   top: 117px;
+}
+
+@media (max-width: 660px) {
+  .dog_icon {
+    position: initial;
+  }
 }
