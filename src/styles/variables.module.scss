@@ -32,14 +32,7 @@ $line_gradient: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
   }
 }
 
-%tpl_btn {
-  height: 48px;
-  font-size: 14px;
-  font-weight: 600;
-  background-color: $brand_yellow;
-  border-radius: 8px;
-  color: $color_EAECEF;
-  &:hover {
-    background-color: $color_5A2D1A;
-  }
+
+:export {
+  white: $color_FFFFFF;
 }
