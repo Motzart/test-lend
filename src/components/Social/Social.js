@@ -4,7 +4,7 @@ import elips from '../../images/social/elips.svg'
 import telegram from '../../images/social/telegram.svg'
 import * as styles from './Social.module.scss'
 
-const Social = () => {
+const Social = ({ backgroundColor }) => {
   const iconSocial = [
     {
       label: 'Telegram',
@@ -30,7 +30,7 @@ const Social = () => {
           return (
             <li key={idx} className={styles.social_element}>
               <a href={url} target="_blank" rel="noreferrer nofollow noopener">
-                <span className={styles.social_circle}>
+                <span style={backgroundColor} className={styles.social_circle}>
                   <img src={icon} alt={label} />
                 </span>
               </a>
