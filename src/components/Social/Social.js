@@ -30,9 +30,9 @@ const Social = ({ backgroundColor }) => {
           return (
             <li key={idx} className={styles.social_element}>
               <a href={url} target="_blank" rel="noreferrer nofollow noopener">
-                <div style={backgroundColor} className={styles.social_circle}>
+                <span style={backgroundColor} className={styles.social_circle}>
                   <img src={icon} alt={label} />
-                </div>
+                </span>
               </a>
             </li>
           )

@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/Info/security.module.scss'
+import * as styles from '../../../../styles/MainContent/Info/security.module.scss'
 // static
 import TriangleImg from '../../../../images/MainContent/triangle_security.svg'
 import LockImg from '../../../../images/MainContent/lock.svg'
@@ -12,7 +12,7 @@ export default function Security() {
     <div className={styles.security}>
       <div className={styles.info}>
         <h2 className={styles.title}>Strictly Audited</h2>
-        <p className={styles.text}>
+        <p>
           Before deploying to mainnet, PembRock will be precisely audited and
           checked for security.
         </p>
@@ -26,12 +26,7 @@ export default function Security() {
           alt="Triangle shape with black shadow"
         />
         <div className={styles.security_img_wrapper}>
-          <img
-            width={160}
-            src={SecurityShapeImg}
-            className={styles.security_shape_img}
-            alt="Security shape icon"
-          />
+          <img width={160} src={SecurityShapeImg} alt="Security shape icon" />
           <img src={LockImg} className={styles.lock_img} alt="Lock icon" />
         </div>
         <img

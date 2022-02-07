@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/Info/benefit.module.scss'
+import * as styles from '../../../../styles/MainContent/Info/benefit.module.scss'
 //static
 import CommunityImg from '../../../../images/MainContent/community_icon.svg'
 import ProfitImg from '../../../../images/MainContent/profit_icon.svg'
@@ -9,7 +9,7 @@ import RocketImg from '../../../../images/MainContent/rocket_icon.svg'
 
 export default function Bnefit() {
   return (
-    <div className={styles.benefit}>
+    <div className={styles.benefit} id="products">
       <div className={styles.item}>
         <img width={76} height={76} src={CommunityImg} alt="Community icon" />
         <p>

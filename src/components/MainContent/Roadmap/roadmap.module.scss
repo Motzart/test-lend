@@ -3,7 +3,7 @@
 .roadmap_section {
   font-family: 'Proxima Nova';
   padding: 0 12px;
-  overflow-x: auto;
+  @include tpl_hide_scrollbar;
 
   .title {
     font-style: normal;

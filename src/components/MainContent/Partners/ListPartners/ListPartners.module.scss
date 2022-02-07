@@ -9,7 +9,7 @@
 @media (max-width: 767px) {
   .list_partners {
     justify-content: start;
-    overflow-x: auto;
+    @include tpl_hide_scrollbar;
   }
 }
 

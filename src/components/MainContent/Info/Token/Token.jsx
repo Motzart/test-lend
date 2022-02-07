@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/Info/token.module.scss'
+import * as styles from '../../../../styles/MainContent/Info/token.module.scss'
 
 export default function Token() {
   return (

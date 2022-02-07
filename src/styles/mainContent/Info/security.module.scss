@@ -1,4 +1,4 @@
-@import '../variables.module.scss';
+@import '../../variables.module.scss';
 
 .security {
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  overflow-y: hidden;
+  overflow: hidden;
   & > div {
     width: 555px;
   }
