@@ -1,0 +1,71 @@
+@import '../variables.module.scss';
+
+.security {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-y: hidden;
+  & > div {
+    width: 555px;
+  }
+
+  .info {
+    .title {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+  .img_block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .triangle_shape {
+      position: relative;
+      left: -32px;
+      &:last-of-type {
+        transform: scale(-1, 1);
+        left: unset;
+        right: -32px;
+      }
+    }
+    .security_img_wrapper {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .lock_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  @media only screen and (max-width: 680px) {
+    .img_block .triangle_shape {
+      left: 0px;
+      width: 160px;
+      height: 160px;
+      &:last-of-type {
+        right: 0px;
+      }
+    }
+    .security_img_wrapper {
+      width: 140px;
+      height: 160px;
+    }
+  }
+  @media only screen and (max-width: 481px) {
+    .img_block .triangle_shape {
+      width: 120px;
+      height: 120px;
+    }
+    .security_img_wrapper {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
