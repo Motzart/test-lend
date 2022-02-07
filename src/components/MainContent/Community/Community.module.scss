@@ -19,6 +19,7 @@
 @media (max-width: 660px) {
   .community_section {
     height: 514px;
+    margin-bottom: 100px;
   }
 }
 
@@ -91,13 +92,16 @@
 @media (max-width: 660px) {
   .dog_block {
     width: auto;
+    max-width: 336px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .dog_icon {
   position: absolute;
   bottom: 0;
-  //   top: 117px;
+  //   background-color: blue;
 }
 
 @media (max-width: 660px) {

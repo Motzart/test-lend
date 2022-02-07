@@ -7,6 +7,7 @@ import Social from '../../Social/Social'
 // components
 
 const Community = () => {
+  const backgroundColor = { backgroundColor: 'white' }
   return (
     <section className={styles.community_section}>
       <img src={land} className={styles.land_icon} alt="land" />
@@ -17,7 +18,7 @@ const Community = () => {
             Be part of the PembRock community, keep abreast with our updates,
             and rock among like-minded Rockers.
           </p>
-          <Social />
+          <Social backgroundColor={backgroundColor} />
         </div>
         <div className={styles.dog_block}>
           <img src={dog} className={styles.dog_icon} alt="land" />
