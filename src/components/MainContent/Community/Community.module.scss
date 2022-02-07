@@ -3,7 +3,6 @@
 .community_section {
   display: flex;
   align-items: center;
-  //   justify-content: center;
   position: relative;
 
   width: auto;
@@ -24,7 +23,6 @@
 }
 
 .land_icon {
-  //   display: block;
   opacity: 0.6;
 }
 
@@ -37,7 +35,6 @@
 @media (max-width: 660px) {
   .test {
     display: block;
-    // padding: 0px;
   }
 }
 
@@ -101,7 +98,6 @@
 .dog_icon {
   position: absolute;
   bottom: 0;
-  //   background-color: blue;
 }
 
 @media (max-width: 660px) {
