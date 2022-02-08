@@ -1,11 +1,27 @@
+require('dotenv').config({})
+
 module.exports = {
   siteMetadata: {
     title: 'Pembrock',
     description: 'Pembrock landing page v.1',
   },
   plugins: [
+    'gatsby-plugin-sass',
     'gatsby-plugin-image',
+    `gatsby-plugin-sharp`,
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        linkResolver: require('./src/utils/LinkResolver').linkResolver,
+        schemas: {
+          homepage: require('./custom_types/homepage.json'),
+          navigation: {},
+          page: {},
+        },
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

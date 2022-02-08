@@ -1,0 +1,69 @@
+@import '../../variables.module.scss';
+
+.security {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow: hidden;
+  & > div {
+    width: 555px;
+  }
+
+  .info {
+    .title {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+  }
+  .img_block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .triangle_shape {
+      position: relative;
+      left: -32px;
+      &:last-of-type {
+        transform: scale(-1, 1);
+        left: unset;
+        right: -16px;
+      }
+      svg {
+        width: 220px;
+        height: 220px;
+      }
+    }
+    .security_img_wrapper {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      svg {
+        width: 160px;
+        height: 160px;
+      }
+      .lock_img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        svg {
+          width: 32px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .img_block {
+      display: none;
+    }
+    .security_img_wrapper {
+      width: 160px;
+      height: 160px;
+    }
+  }
+}

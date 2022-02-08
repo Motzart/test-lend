@@ -1,0 +1,62 @@
+@import '../../variables.module.scss';
+
+.token {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-y: hidden;
+  & > div {
+    width: 555px;
+  }
+
+  .shape_block {
+    position: relative;
+    z-index: 1;
+    .left_rectangle {
+      width: 323px;
+      height: 169px;
+      position: absolute;
+      top: -10px;
+      border-radius: 40px;
+      background-color: $color_141313;
+      background-image: linear-gradient(
+        -92deg,
+        rgba(246, 130, 31, 0) -10%,
+        #f6821f 110%
+      );
+
+      box-shadow: inset -4px 0px 8px rgba(255, 255, 255, 0.08);
+      transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
+      z-index: 3;
+    }
+    .right_rectangle {
+      position: absolute;
+      left: 130px;
+      top: 30px;
+      width: 258px;
+      height: 151px;
+      border-radius: 40px;
+      background-color: $brand_yellow;
+      box-shadow: inset -4px 0px 4px rgba(255, 255, 255, 0.25);
+      transform: matrix(-0.71, 0.71, 0.71, 0.71, 0, 0);
+      z-index: 2;
+    }
+    @media only screen and (max-width: 1280px) {
+      display: none;
+    }
+  }
+  .token_info {
+    .title {
+      text-align: left;
+    }
+    .text {
+      padding: 8px 0 40px;
+    }
+    .btn {
+      width: 132px;
+      @extend %tpl_btn;
+    }
+  }
+}

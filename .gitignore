@@ -14,8 +14,9 @@ public
 
 # Project files
 .vscode/
-.env*
+*.env*
 
-# 
-*.lock
+#
+.DS_Store
+*.idea
 

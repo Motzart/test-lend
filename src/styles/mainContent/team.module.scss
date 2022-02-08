@@ -1,0 +1,44 @@
+@import '../variables.module.scss';
+
+.team_section {
+  .title {
+    margin-bottom: 32px;
+  }
+  .team_block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+    .contributor {
+      width: 262px;
+      min-height: 474px;
+      padding: 16px;
+      line-height: 24px;
+      border: 1px solid $color_1E1E1F;
+      box-sizing: border-box;
+      border-radius: 16px;
+      background-color: transparent;
+      .name {
+        margin: 16px 0 8px;
+        font-size: 18px;
+        color: $color_EAECEF;
+      }
+      .bio {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    h2.title {
+      text-align: left;
+    }
+    .team_block .contributor {
+      width: 100%;
+      .bio {
+        font-size: 16px;
+      }
+    }
+  }
+}

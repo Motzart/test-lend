@@ -1,0 +1,61 @@
+// colors
+$black: #100f0f;
+$gray: #848a8f;
+$brand_yellow: #f6821f;
+$color_1d1d1d: #1d1d1d;
+$color_080808: #080808;
+$color_FFFFFF: #ffffff;
+$color_848A8F: #848a8f;
+$color_1E1E1F: #1e1e1f;
+$color_5A2D1A: #5a2d1a;
+$color_EAECEF: #eaecef;
+$color_141313: #141313;
+$line_gradient: linear-gradient(180deg, $color_1d1d1d 0%, $color_080808 100%);
+
+:export {
+  white: $color_FFFFFF;
+}
+
+// templates
+%tpl_circle {
+  position: absolute;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  background-color: $color_5A2D1A;
+  border-radius: 50%;
+  .innerCircle {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translate(50%, -50%);
+    background-color: $color_EAECEF;
+    border-radius: 50%;
+  }
+}
+
+%tpl_btn {
+  height: 48px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: $brand_yellow;
+  border-radius: 8px;
+  color: $color_EAECEF;
+  &:hover {
+    background-color: $color_5A2D1A;
+  }
+}
+
+// mixin
+// hide scroll but allow scrolling
+@mixin tpl_hide_scrollbar {
+  // note that only mixin can be used in media queries but not templates
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-x: scroll;
+  &::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+}
