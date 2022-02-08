@@ -5,7 +5,7 @@ import Social from '../../Social/Social'
 // styles
 import * as styles from '../../../styles/header/BurgerMenu.module.scss'
 
-const BurgerMenu = ({ img, menuList }) => {
+const BurgerMenu = ({ img, menuList, handleClick }) => {
   return (
     <nav className={styles.header_menu}>
       <ul className={styles.header_list}>
@@ -17,7 +17,11 @@ const BurgerMenu = ({ img, menuList }) => {
         {menuList.map((link, idx) => {
           return (
             <li className={styles.li_b} key={idx}>
-              <Link to="/" className={styles.header_link}>
+              <Link
+                to={link.href}
+                onClick={handleClick}
+                className={styles.header_link}
+              >
                 {link.label}
               </Link>
               {link.icon && (
