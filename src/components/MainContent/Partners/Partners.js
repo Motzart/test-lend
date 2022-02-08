@@ -27,8 +27,10 @@ const Partners = () => {
   ]
 
   return (
-    <section id="partners">
-      <h2 className={styles.title_partners}>Our Partners</h2>
+    <section>
+      <h2 className={styles.title_partners}>
+        <span id="partners"></span>Our Partners
+      </h2>
       <ListPartners partnersList={partnersList} />
     </section>
   )

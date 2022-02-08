@@ -23,9 +23,9 @@ const Roadmap = ({ data }) => {
     </div>
   )
   return (
-    <section className={styles.roadmap_section} id="roadmap">
+    <section className={styles.roadmap_section}>
       <LanguageSwitcher lang={data.lang} altLangs={data.alternate_languages} />
-      <h2 className={styles.title}>{data.data.banner_title.text}</h2>
+      <h2 className={styles.title}><span id="roadmap"></span>{data.data.banner_title.text}</h2>
       <div className={styles.roadmap}>
         {RoadMapConfig.oddMilestone.map((el, index) => {
           return (
