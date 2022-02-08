@@ -1,4 +1,4 @@
-@import '../../styles/variables.module.scss';
+@import '../variables.module.scss';
 
 .block_hero {
   position: sticky;
@@ -22,7 +22,7 @@
   height: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 880px) {
   .hero_text {
     width: 100%;
   }
@@ -42,7 +42,7 @@
   color: $brand_yellow;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 880px) {
   .title {
     font-size: 32px;
     line-height: 48px;
@@ -63,7 +63,7 @@
   color: $color_848A8F;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 880px) {
   .hero_img {
     display: none;
   }

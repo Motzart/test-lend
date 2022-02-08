@@ -1,10 +1,11 @@
-import React from 'react';
-import * as styles from './Logo.module.scss'
+// library
+import React from 'react'
+import { ReactSVG } from 'react-svg'
+// styles
+import * as styles from '../../../styles/logo/Logo.module.scss'
 
-const Logo = ({img}) => {
-    return (
-        <img src={img} alt='logo' className={styles.header_logo}/>
-    )
+const Logo = ({ img }) => {
+  return <ReactSVG className={styles.header_logo} src={img} />
 }
 
-export default Logo;
+export default Logo

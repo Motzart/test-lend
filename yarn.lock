@@ -8601,7 +8601,7 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-svg@^14.1.9:
+react-svg@^14.1.10:
   version "14.1.10"
   resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-14.1.10.tgz#a43e8cb2e1501479f0e6fcdf7ef831fc579839a4"
   integrity sha512-fiJP7KfNMHkqM2fVS785fo4IMk3mWFOImssz0fD/iY7EZjdcraZTO35n5GBXii48TtQfsk5wMpJWHtjNukEG7w==
