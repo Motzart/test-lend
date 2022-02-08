@@ -1,9 +1,11 @@
 // library
 import React from 'react'
+import { ReactSVG } from 'react-svg'
 // styles
 import * as styles from '../../../../styles/MainContent/Info/bestSuit.module.scss'
 // static
 import TriangleImg from '../../../../images/MainContent/triangle.svg'
+import TriangleScaledImg from '../../../../images/MainContent/rectangle_scaled.svg'
 import CurrencyDollarImg from '../../../../images/MainContent/currency_circle_dollar.svg'
 import RefreshImg from '../../../../images/MainContent/fi_refresh_cw.svg'
 
@@ -14,20 +16,9 @@ export default function BestSuit() {
       <div className={styles.container}>
         <div className={styles.block}>
           <div className={styles.inner_block}>
-            <img
-              width={160}
-              height={160}
-              src={TriangleImg}
-              alt="Triangle shape"
-            />
-            <img src={CurrencyDollarImg} alt="Currency circle dollar icon" />
-            <img
-              width={160}
-              height={160}
-              src={TriangleImg}
-              className={styles.img_transform}
-              alt="Triangle shape"
-            />
+            <ReactSVG src={TriangleImg} />
+            <ReactSVG src={CurrencyDollarImg} />
+            <ReactSVG src={TriangleScaledImg} />
           </div>
           <h3 className={styles.sub_title}>Invest and earn</h3>
           <p className={styles.text}>
@@ -39,20 +30,9 @@ export default function BestSuit() {
         </div>
         <div className={styles.block}>
           <div className={styles.inner_block}>
-            <img
-              width={160}
-              height={160}
-              src={TriangleImg}
-              alt="Triangle shape"
-            />
-            <img src={RefreshImg} alt="Finance refresh icon" />
-            <img
-              width={160}
-              height={160}
-              src={TriangleImg}
-              className={styles.img_transform}
-              alt="Triangle shape"
-            />
+            <ReactSVG src={TriangleImg} />
+            <ReactSVG src={RefreshImg} />
+            <ReactSVG src={TriangleScaledImg} />
           </div>
           <h3 className={styles.sub_title}>Use additional liquidity</h3>
           <p className={styles.text}>

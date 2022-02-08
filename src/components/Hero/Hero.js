@@ -1,7 +1,11 @@
+// library
 import React from 'react'
-import cori from '../../images/MainContent/Hero/Cori.svg'
+import { ReactSVG } from 'react-svg'
+// static
+import corgi from '../../images/MainContent/Hero/Corgi.svg'
 import Social from '../Social/Social'
-import * as styles from './Hero.module.scss'
+// styles
+import * as styles from '../../styles/hero/Hero.module.scss'
 
 const Hero = () => {
   return (
@@ -20,7 +24,7 @@ const Hero = () => {
         <Social />
       </div>
       <div className={styles.hero_img}>
-        <img src={cori} alt="img" />
+        <ReactSVG src={corgi} />
       </div>
     </div>
   )

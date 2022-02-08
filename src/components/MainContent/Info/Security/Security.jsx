@@ -1,5 +1,6 @@
 // library
 import React from 'react'
+import { ReactSVG } from 'react-svg'
 // styles
 import * as styles from '../../../../styles/MainContent/Info/security.module.scss'
 // static
@@ -18,24 +19,12 @@ export default function Security() {
         </p>
       </div>
       <div className={styles.img_block}>
-        <img
-          width={220}
-          height={220}
-          src={TriangleImg}
-          className={styles.triangle_shape}
-          alt="Triangle shape with black shadow"
-        />
+        <ReactSVG className={styles.triangle_shape} src={TriangleImg} />
         <div className={styles.security_img_wrapper}>
-          <img width={160} src={SecurityShapeImg} alt="Security shape icon" />
-          <img src={LockImg} className={styles.lock_img} alt="Lock icon" />
+          <ReactSVG src={SecurityShapeImg} />
+          <ReactSVG className={styles.lock_img} src={LockImg} />
         </div>
-        <img
-          width={220}
-          height={220}
-          src={TriangleImg}
-          className={styles.triangle_shape}
-          alt="Triangle shape with black shadow"
-        />
+        <ReactSVG className={styles.triangle_shape} src={TriangleImg} />
       </div>
     </div>
   )
