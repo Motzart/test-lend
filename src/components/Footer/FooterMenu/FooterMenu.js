@@ -1,24 +1,26 @@
-import React from 'react';
+import React from 'react'
 import { Link } from 'gatsby'
-import * as styles from './FooterMenu.module.scss'
+import * as styles from '../../../styles/footer/FooterMenu.module.scss'
 
-const FooterMenu = ({menuList}) => {
-    return (
-        <nav>
-        <ul className={styles.header_list}> 
+const FooterMenu = ({ menuList }) => {
+  return (
+    <nav>
+      <ul className={styles.header_list}>
         {menuList.map((link, idx) => {
-          return(
-             <li key={idx} className={styles.list_el}>
-              <Link to="/" className={styles.header_link}>
+          return (
+            <li key={idx} className={styles.list_el}>
+              <Link to={link.href} className={styles.header_link}>
                 {link.label}
               </Link>
-              {link.icon && <img src={link.icon} className={styles.icon} alt='arrows' />}
-          </li>
+              {link.icon && (
+                <img src={link.icon} className={styles.icon} alt="arrows" />
+              )}
+            </li>
           )
-            })}
-        </ul>
-      </nav>
-    )
+        })}
+      </ul>
+    </nav>
+  )
 }
 
-export default FooterMenu;
+export default FooterMenu

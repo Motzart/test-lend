@@ -6,7 +6,7 @@ import { RoadMapConfig } from '../../../config/roadmap-config'
 import { LanguageSwitcher } from '../../LanguageSwitcher'
 
 // static
-import * as styles from './roadmap.module.scss'
+import * as styles from '../../../styles/mainContent/roadmap.module.scss'
 import activeLine from '../../../images/MainContent/roadmap_active.svg'
 import noActiveLine from '../../../images/MainContent/roadmap_noactive.svg'
 import gradientLine from '../../../images/MainContent/roadmap_gradient_line.svg'

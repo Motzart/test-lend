@@ -1,21 +1,34 @@
-@import '../../../styles/variables.module.scss';
+@import '../variables.module.scss';
 
 .header_list {
   display: flex;
-  position: relative;
-  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .header_list {
+    display: block;
+  }
 }
 
 .header_link {
   list-style: none;
   color: $color_848A8F;
   text-decoration: none;
-  margin-left: 24px;
   width: 62px;
   height: 24px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+
+.list_el:not(:first-child) {
+  margin-left: 24px;
+}
+
+@media (max-width: 767px) {
+  .list_el:first-child {
+    margin-left: 24px;
+  }
 }
 
 .header_link {
@@ -28,10 +41,4 @@
 
 .icon {
   margin-left: 5px;
-}
-
-@media (max-width: 767px) {
-  .navigation {
-    display: none;
-  }
 }

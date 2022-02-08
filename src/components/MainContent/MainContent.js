@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from './mainContent.module.scss'
+import * as styles from '../../styles/mainContent/mainContent.module.scss'
 // components
 import Info from './Info/Info'
 import Roadmap from './Roadmap/Roadmap'

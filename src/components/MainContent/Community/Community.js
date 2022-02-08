@@ -2,16 +2,16 @@ import React from 'react'
 import land from '../../../images/MainContent/Community/land.svg'
 import dog from '../../../images/MainContent/Community/dog.png'
 // styles
-import * as styles from './Community.module.scss'
+import * as styles from '../../../styles/mainContent/community/community.module.scss'
 import * as background from '../../../styles/variables.module.scss'
-import Social from '../../Social/Social'
 // components
+import Social from '../../Social/Social'
 
 const Community = () => {
   const backgroundColor = { backgroundColor: background.white }
 
   return (
-    <section className={styles.community_section}>
+    <section className={styles.community_section} id="community">
       <img src={land} className={styles.land_icon} alt="land" />
       <div className={styles.test}>
         <div className={styles.text_block}>

@@ -12,6 +12,7 @@ export default function Bnefit() {
     <div className={styles.benefit} id="products">
       <div className={styles.item}>
         <img width={76} height={76} src={CommunityImg} alt="Community icon" />
+        <h2 className={styles.title}>Managed by Community</h2>
         <p>
           PembRock’s community is at the driver’s seat of further PembRock
           Finance development and evolution.
@@ -19,6 +20,7 @@ export default function Bnefit() {
       </div>
       <div className={styles.item}>
         <img width={76} height={76} src={ProfitImg} alt="Profit icon" />
+        <h2 className={styles.title}>More Profits Unlocked</h2>
         <p>
           Leverage yield farming gives the opportunity to increase your stake
           with borrowed funds and as a result, gain more profits.
@@ -26,6 +28,7 @@ export default function Bnefit() {
       </div>
       <div className={styles.item}>
         <img width={76} height={76} src={RocketImg} alt="Rocket icon" />
+        <h2 className={styles.title}>Supported by Near Foundation</h2>
         <p>
           PembRock Finance obtained grant support from Near Foundation to expand
           Near Ecosystem with new financial tools.
