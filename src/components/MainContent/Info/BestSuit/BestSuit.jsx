@@ -15,15 +15,15 @@ export default function BestSuit() {
         <div className={styles.block}>
           <div className={styles.inner_block}>
             <img
-              width={149}
-              height={149}
+              width={160}
+              height={160}
               src={TriangleImg}
               alt="Triangle shape"
             />
             <img src={CurrencyDollarImg} alt="Currency circle dollar icon" />
             <img
-              width={149}
-              height={149}
+              width={160}
+              height={160}
               src={TriangleImg}
               className={styles.img_transform}
               alt="Triangle shape"
@@ -31,25 +31,24 @@ export default function BestSuit() {
           </div>
           <h3 className={styles.sub_title}>Invest and earn</h3>
           <p className={styles.text}>
-            Borrow funds and benefit from leverage farming by getting higher
-            APY.
+            Lend your tokens to other participants and earn up to 10% APY.
           </p>
           <button type={'button'} className={styles.btn}>
-            Use liquidity
+            Invest and earn
           </button>
         </div>
         <div className={styles.block}>
           <div className={styles.inner_block}>
             <img
-              width={149}
-              height={149}
+              width={160}
+              height={160}
               src={TriangleImg}
               alt="Triangle shape"
             />
             <img src={RefreshImg} alt="Finance refresh icon" />
             <img
-              width={149}
-              height={149}
+              width={160}
+              height={160}
               src={TriangleImg}
               className={styles.img_transform}
               alt="Triangle shape"
@@ -57,10 +56,11 @@ export default function BestSuit() {
           </div>
           <h3 className={styles.sub_title}>Use additional liquidity</h3>
           <p className={styles.text}>
-            Lend your tokens to other participants and earn up to 10% APY.
+            Borrow funds and benefit from leverage farming by getting higher
+            APY.
           </p>
           <button type={'button'} className={styles.btn}>
-            Invest and earn
+            Use liquidity
           </button>
         </div>
       </div>

@@ -1,7 +1,6 @@
-@import '../../../styles/variables.module.scss';
+@import '../variables.module.scss';
 
 .roadmap_section {
-  font-family: 'Proxima Nova';
   padding: 0 12px;
   @include tpl_hide_scrollbar;
 
@@ -17,7 +16,6 @@
     display: grid;
     grid-template-columns: repeat(7, max-content);
     grid-template-rows: 175px 98px 150px;
-    padding-bottom: 124px;
 
     .item {
       position: relative;
@@ -98,6 +96,9 @@
     .link {
       line-height: inherit;
       color: $brand_yellow;
+      &:hover {
+        font-weight: bold;
+      }
     }
     .disc {
       position: absolute;

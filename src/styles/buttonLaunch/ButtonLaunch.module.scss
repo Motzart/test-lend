@@ -1,20 +1,18 @@
-@import '../../styles/variables.module.scss';
+@import '../variables.module.scss';
 
 .button_connect {
-    background-color: $brand_yellow;
-    color: $color_FFFFFF;
-    width: 137px;
-    height: 40px;
-    border-radius: 24px;
-    border: none;
-
+  width: 100%;
+  background-color: $brand_yellow;
+  color: $color_FFFFFF;
+  height: 40px;
+  border-radius: 24px;
+  border: none;
   position: relative;
+  padding: 8px 32px;
   z-index: 3;
-
   cursor: pointer;
 
   .button_text {
-    font-family: Proxima Nova Cn Lt;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

@@ -9,7 +9,7 @@ import logoImg from '../../images/header/header_logo.svg'
 import imgArrows from '../../images/header/arrows.svg'
 import menuList from '../../data/menu'
 // styles
-import * as styles from './header.module.scss'
+import * as styles from '../../styles/header/header.module.scss'
 
 export const Header = () => {
   const [enableButton, setEnableButton] = useState(true)
