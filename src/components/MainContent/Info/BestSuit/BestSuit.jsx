@@ -2,7 +2,7 @@
 import React from 'react'
 import { ReactSVG } from 'react-svg'
 // styles
-import * as styles from '../../../../styles/MainContent/Info/bestSuit.module.scss'
+import * as styles from '../../../../styles/mainContent/Info/bestSuit.module.scss'
 // static
 import TriangleImg from '../../../../images/MainContent/triangle.svg'
 import TriangleScaledImg from '../../../../images/MainContent/rectangle_scaled.svg'

@@ -1,13 +1,13 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../styles/MainContent/Info/benefit.module.scss'
+import * as styles from '../../../../styles/mainContent/Info/benefit.module.scss'
 //static
 import CommunityImg from '../../../../images/MainContent/community_icon.svg'
 import ProfitImg from '../../../../images/MainContent/profit_icon.svg'
 import RocketImg from '../../../../images/MainContent/rocket_icon.svg'
 
-export default function Bnefit() {
+export default function Benefit() {
   return (
     <div className={styles.benefit}>
       <div className={styles.item}>
