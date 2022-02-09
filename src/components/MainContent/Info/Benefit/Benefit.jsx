@@ -1,7 +1,7 @@
 // library
 import React from 'react'
 // styles
-import * as styles from '../../../../styles/MainContent/Info/benefit.module.scss'
+import * as styles from '../../../styles/MainContent/Info/benefit.module.scss'
 //static
 import CommunityImg from '../../../../images/MainContent/community_icon.svg'
 import ProfitImg from '../../../../images/MainContent/profit_icon.svg'
