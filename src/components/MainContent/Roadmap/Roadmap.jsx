@@ -3,7 +3,7 @@ import React from 'react'
 // config
 import { RoadMapConfig } from '../../../config/roadmap-config'
 
-import { LanguageSwitcher } from '../../LanguageSwitcher'
+// import { LanguageSwitcher } from '../../LanguageSwitcher'
 
 // static
 import * as styles from '../../../styles/mainContent/roadmap.module.scss'
@@ -24,7 +24,6 @@ const Roadmap = ({ data }) => {
   )
   return (
     <section className={styles.roadmap_section}>
-      <LanguageSwitcher lang={data.lang} altLangs={data.alternate_languages} />
       <h2 className={styles.title}><span id="roadmap"></span>{data.data.banner_title.text}</h2>
       <div className={styles.roadmap}>
         {RoadMapConfig.oddMilestone.map((el, index) => {
